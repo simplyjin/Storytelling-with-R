@@ -1,0 +1,2 @@
+# Storytelling-with-R-Jeff-Chen
+Working through http://commercedataservice.github.io/cda_storytelling_in_r/
