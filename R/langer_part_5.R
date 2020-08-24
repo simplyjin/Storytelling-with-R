@@ -78,7 +78,7 @@ cv.5.folds <- createMultiFolds(rf.label, k = 5, times = 10)
 ctrl.2 <- trainControl(method = "repeatedcv", number = 5, repeats = 10,
                        index = cv.5.folds)
 
-cl <- makeCluster(6, type = "SOCK")
+cl <- makeCluster(2, type = "SOCK")
 registerDoSNOW(cl)
 
 set.seed(89472)
@@ -99,7 +99,7 @@ cv.3.folds <- createMultiFolds(rf.label, k = 3, times = 10)
 ctrl.3 <- trainControl(method = "repeatedcv", number = 3, repeats = 10,
                        index = cv.3.folds)
 
-cl <- makeCluster(6, type = "SOCK")
+cl <- makeCluster(2, type = "SOCK")
 registerDoSNOW(cl)
 
 set.seed(94622)
